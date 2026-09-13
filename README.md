@@ -10,7 +10,7 @@ Dati estratti da [enforcementtracker.com](https://www.enforcementtracker.com/) (
 - **Tabella filtrabile e ordinabile**: ricerca testuale, filtro per paese, range importo
 - **Aggiornamento automatico** ogni 6 ore tramite GitHub Actions.
 - **Responsive**: funziona su desktop, tablet e smartphone moderni.
-- **Attribuzione CC BY-NC-SA 4.0** incorporata, cconforme alla licenza della fonte dati menzionata sopra.
+- **Attribuzione CC BY-NC-SA 4.0** incorporata, conforme alla licenza della fonte dati menzionata sopra.
 
 ## Caratteristiche PET
 Da codice:
