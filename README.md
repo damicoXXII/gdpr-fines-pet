@@ -11,11 +11,13 @@ Dati estratti da [enforcementtracker.com](https://www.enforcementtracker.com/) (
 - **Aggiornamento automatico** ogni 6 ore tramite GitHub Actions.
 - **Responsive**: funziona su desktop, tablet e smartphone moderni.
 - **Attribuzione CC BY-NC-SA 4.0** incorporata, conforme alla licenza della fonte dati menzionata sopra.
+- **Descrizioni non raccolte**: le descrizioni tendono a raccogliere ulteriori dati sulla sanzione. Questo plugin non le raccoglie e di conseguenza non le mostra in tabella.
 
 ## Caratteristiche PET
 Da codice:
 - **Soggetti censurati**: i nomi delle entità sanzionate sono oscurati. Si può visualizzare i soggetti cliccando sopra la barra di censura.
 - **Nessun tracker**: il plugin non raccoglie dati di utilizzo del sito web in cui è inserito o degli utenti finali.
+
 
 Suggeriti lato WP:
 - **Doppio controllo di visualizzazione**: se si clicca un soggetto oscurato, una modale (o tecnologie affini) come check di reinvio al sito originale (`https://www.enforcementtracker.com/[IDSANZIONE]`)
