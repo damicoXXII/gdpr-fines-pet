@@ -18,7 +18,7 @@ Da codice:
 - **Nessun tracker**: il plugin non raccoglie dati di utilizzo del sito web in cui è inserito o degli utenti finali.
 
 Suggeriti lato WP:
-- **Doppio controllo di visualizzazione**: se si clicca un soggetto oscurato, una modale (o tecnologie affini) come check di reinvio al sito originale ("https://www.enforcementtracker.com/[IDSANZIONE]")
+- **Doppio controllo di visualizzazione**: se si clicca un soggetto oscurato, una modale (o tecnologie affini) come check di reinvio al sito originale (`https://www.enforcementtracker.com/[IDSANZIONE]`)
 - **Privacy by design e default**: principi applicati a tutto il sito, non solo per finalità di compliance :)
 
 ## Struttura del progetto
