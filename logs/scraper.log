@@ -1,0 +1,22 @@
+2026-09-13 13:26:43 [INFO] ============================================================
+2026-09-13 13:26:43 [INFO] GDPR Enforcement Tracker scraper starting
+2026-09-13 13:26:43 [INFO] ============================================================
+2026-09-13 13:26:43 [INFO] Checking robots.txt ...
+2026-09-13 13:26:43 [INFO] robots.txt fetched (412 bytes)
+2026-09-13 13:26:46 [INFO] Fetching homepage: https://www.enforcementtracker.com/
+2026-09-13 13:26:46 [INFO] Homepage fetched: HTTP 200, 1314933 bytes
+2026-09-13 13:26:47 [INFO] Raw records found in blob: 3228
+2026-09-13 13:26:47 [INFO] Parsed records: 3228 (skipped 0 duplicates/invalid)
+2026-09-13 13:26:47 [INFO] Saved 3228 records to E:\Git-Devin\Eticarium-Dev\multe-gdpr\data\gdpr_fines.json
+2026-09-13 13:26:47 [INFO] Scraper completed successfully.
+2026-09-13 13:27:22 [INFO] ============================================================
+2026-09-13 13:27:22 [INFO] GDPR Enforcement Tracker scraper starting
+2026-09-13 13:27:22 [INFO] ============================================================
+2026-09-13 13:27:22 [INFO] Checking robots.txt ...
+2026-09-13 13:27:22 [INFO] robots.txt fetched (412 bytes)
+2026-09-13 13:27:25 [INFO] Fetching homepage: https://www.enforcementtracker.com/
+2026-09-13 13:27:25 [INFO] Homepage fetched: HTTP 200, 1314933 bytes
+2026-09-13 13:27:25 [INFO] Raw records found in blob: 3228
+2026-09-13 13:27:25 [INFO] Parsed records: 3228 (skipped 0 duplicates/invalid)
+2026-09-13 13:27:26 [INFO] Saved 3228 records to E:\Git-Devin\Eticarium-Dev\multe-gdpr\data\gdpr_fines.json
+2026-09-13 13:27:26 [INFO] Scraper completed successfully.

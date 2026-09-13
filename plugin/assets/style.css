@@ -1,0 +1,380 @@
+/**
+ * Multe GDPR – Tabella sanzioni
+ * Tutti i selettori sono prefissati con .multe-gdpr per evitare
+ * conflitti con il tema WordPress ospitante.
+ */
+
+/* ----------------------------------------------------------------
+   Reset minimale – scoped al contenitore
+   ---------------------------------------------------------------- */
+.multe-gdpr {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #1e293b;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.multe-gdpr *,
+.multe-gdpr *::before,
+.multe-gdpr *::after {
+    box-sizing: inherit;
+}
+
+/* ----------------------------------------------------------------
+   Header – contatori
+   ---------------------------------------------------------------- */
+.multe-gdpr__header {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background: #f1f5f9;
+    border-radius: 6px;
+    border-left: 4px solid #003b57;
+}
+
+.multe-gdpr__stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.multe-gdpr__count,
+.multe-gdpr__updated {
+    font-size: 0.9rem;
+}
+
+.multe-gdpr__count strong {
+    color: #003b57;
+    font-size: 1.1rem;
+}
+
+/* ----------------------------------------------------------------
+   Filtri
+   ---------------------------------------------------------------- */
+.multe-gdpr__filters {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.multe-gdpr__filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.multe-gdpr__input,
+.multe-gdpr__select {
+    padding: 0.45rem 0.65rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    background: #fff;
+    color: #1e293b;
+    transition: border-color 0.15s;
+}
+
+.multe-gdpr__input:focus,
+.multe-gdpr__select:focus {
+    outline: none;
+    border-color: #003b57;
+    box-shadow: 0 0 0 2px rgba(0, 59, 87, 0.15);
+}
+
+.multe-gdpr__input {
+    flex: 1;
+    min-width: 180px;
+}
+
+.multe-gdpr__input--short {
+    flex: 0 1 160px;
+    min-width: 120px;
+}
+
+.multe-gdpr__select {
+    min-width: 160px;
+}
+
+.multe-gdpr__btn {
+    padding: 0.45rem 1rem;
+    border: 1px solid #003b57;
+    border-radius: 4px;
+    background: #003b57;
+    color: #fff;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+}
+
+.multe-gdpr__btn:hover {
+    background: #00527a;
+}
+
+/* ----------------------------------------------------------------
+   Tabella
+   ---------------------------------------------------------------- */
+.multe-gdpr__table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+}
+
+.multe-gdpr__table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.multe-gdpr__table thead {
+    background: #003b57;
+    color: #fff;
+}
+
+.multe-gdpr__table th {
+    padding: 0.65rem 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    position: relative;
+}
+
+.multe-gdpr__table th:hover {
+    background: #00527a;
+}
+
+/* Sort indicator */
+.multe-gdpr__table th::after {
+    content: "";
+    display: inline-block;
+    margin-left: 4px;
+    opacity: 0.4;
+    font-size: 0.7rem;
+}
+
+.multe-gdpr__table th.multe-gdpr--sort-asc::after {
+    content: "\25B2"; /* triangle up */
+    opacity: 1;
+}
+
+.multe-gdpr__table th.multe-gdpr--sort-desc::after {
+    content: "\25BC"; /* triangle down */
+    opacity: 1;
+}
+
+.multe-gdpr__table td {
+    padding: 0.55rem 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.85rem;
+    vertical-align: top;
+}
+
+.multe-gdpr__table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.multe-gdpr__table tbody tr:nth-child(even) {
+    background: #fafbfc;
+}
+
+.multe-gdpr__table tbody tr:nth-child(even):hover {
+    background: #f1f5f9;
+}
+
+/* ----------------------------------------------------------------
+   Cella soggetto censurato – effetto "redacted"
+   ---------------------------------------------------------------- */
+.multe-gdpr__redacted {
+    display: inline-block;
+    background: #1e293b;
+    color: #1e293b;
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.multe-gdpr__redacted:hover {
+    background: #003b57;
+    color: #fff;
+}
+
+/* Screen reader text inside the redacted link */
+.multe-gdpr__sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ----------------------------------------------------------------
+   Importo – allineamento a destra
+   ---------------------------------------------------------------- */
+.multe-gdpr__fine {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+/* ----------------------------------------------------------------
+   Caricamento / stato vuoto
+   ---------------------------------------------------------------- */
+.multe-gdpr__loading {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #64748b;
+    font-style: italic;
+}
+
+.multe-gdpr__empty {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #94a3b8;
+}
+
+.multe-gdpr__error {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #dc2626;
+    font-weight: 600;
+}
+
+/* ----------------------------------------------------------------
+   Paginazione
+   ---------------------------------------------------------------- */
+.multe-gdpr__pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+}
+
+.multe-gdpr__page-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background: #fff;
+    color: #1e293b;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.multe-gdpr__page-btn:hover {
+    background: #f1f5f9;
+    border-color: #003b57;
+}
+
+.multe-gdpr__page-btn--active {
+    background: #003b57;
+    color: #fff;
+    border-color: #003b57;
+}
+
+.multe-gdpr__page-btn--disabled {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+}
+
+.multe-gdpr__page-info {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin: 0 0.5rem;
+}
+
+/* ----------------------------------------------------------------
+   Footer attribuzione
+   ---------------------------------------------------------------- */
+.multe-gdpr__footer {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-radius: 0 0 6px 6px;
+    font-size: 0.78rem;
+    color: #64748b;
+    text-align: center;
+}
+
+.multe-gdpr__footer a {
+    color: #003b57;
+    text-decoration: underline;
+}
+
+.multe-gdpr__footer a:hover {
+    color: #00527a;
+}
+
+.multe-gdpr__footer-note {
+    margin-top: 0.35rem;
+    font-style: italic;
+    font-size: 0.72rem;
+    color: #94a3b8;
+}
+
+/* ----------------------------------------------------------------
+   Responsive
+   ---------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .multe-gdpr {
+        font-size: 13px;
+    }
+
+    .multe-gdpr__stats {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .multe-gdpr__filter-row {
+        flex-direction: column;
+    }
+
+    .multe-gdpr__input,
+    .multe-gdpr__input--short,
+    .multe-gdpr__select {
+        width: 100%;
+        min-width: 0;
+        flex: none;
+    }
+
+    .multe-gdpr__btn {
+        width: 100%;
+    }
+
+    .multe-gdpr__table th,
+    .multe-gdpr__table td {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.75rem;
+    }
+}

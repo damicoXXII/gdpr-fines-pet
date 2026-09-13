@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multe GDPR – Test Standalone</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            margin: 1rem auto;
+            max-width: 1200px;
+            padding: 0 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #fff;
+        }
+        h1 { font-size: 1.3rem; color: #003b57; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>Multe GDPR – Test Standalone (senza WordPress)</h1>
+
+    <div id="multe-gdpr-root" class="multe-gdpr">
+        <div class="multe-gdpr__header">
+            <div class="multe-gdpr__stats">
+                <span class="multe-gdpr__count">
+                    Totale sanzioni tracciate:
+                    <strong id="multe-gdpr-total">--</strong>
+                </span>
+                <span class="multe-gdpr__updated">
+                    Ultimo aggiornamento:
+                    <em id="multe-gdpr-updated">--</em>
+                </span>
+            </div>
+        </div>
+
+        <div class="multe-gdpr__filters">
+            <div class="multe-gdpr__filter-row">
+                <input type="text" id="multe-gdpr-search" class="multe-gdpr__input"
+                       placeholder="Cerca per paese, autorit&agrave;, settore..." />
+                <select id="multe-gdpr-country" class="multe-gdpr__select">
+                    <option value="">Tutti i paesi</option>
+                </select>
+            </div>
+            <div class="multe-gdpr__filter-row">
+                <input type="number" id="multe-gdpr-fine-min"
+                       class="multe-gdpr__input multe-gdpr__input--short"
+                       placeholder="Importo min (EUR)" min="0" />
+                <input type="number" id="multe-gdpr-fine-max"
+                       class="multe-gdpr__input multe-gdpr__input--short"
+                       placeholder="Importo max (EUR)" min="0" />
+                <button type="button" id="multe-gdpr-reset" class="multe-gdpr__btn">
+                    Reset filtri
+                </button>
+            </div>
+        </div>
+
+        <div class="multe-gdpr__table-wrap">
+            <table class="multe-gdpr__table" id="multe-gdpr-table">
+                <thead>
+                    <tr>
+                        <th data-sort="date">Data</th>
+                        <th data-sort="country">Paese</th>
+                        <th data-sort="authority">Autorit&agrave;</th>
+                        <th data-sort="entity">Soggetto</th>
+                        <th data-sort="fine">Importo (EUR)</th>
+                        <th data-sort="sector">Settore</th>
+                        <th data-sort="articles">Articoli GDPR</th>
+                    </tr>
+                </thead>
+                <tbody id="multe-gdpr-tbody">
+                    <tr>
+                        <td colspan="7" class="multe-gdpr__loading">
+                            Caricamento dati...
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="multe-gdpr__pagination" id="multe-gdpr-pagination"></div>
+
+        <div class="multe-gdpr__footer">
+            <p>
+                Dati forniti da
+                <a href="https://www.enforcementtracker.com/" target="_blank" rel="noopener noreferrer">enforcementtracker.com (CMS.Law)</a>,
+                rilasciati sotto licenza
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>.
+            </p>
+            <p class="multe-gdpr__footer-note">
+                I nomi dei soggetti sanzionati sono oscurati. Per visualizzare i dettagli completi, clicca sul link nella colonna "Soggetto".
+            </p>
+        </div>
+    </div>
+
+    <!-- In modalità standalone, carichiamo il JSON direttamente e
+         costruiamo multeGdprData prima che app.js si inizializzi. -->
+    <script>
+        fetch("../data/gdpr_fines.json")
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                window.multeGdprData = {
+                    fines: data.fines || [],
+                    metadata: data.metadata || {},
+                    error: false
+                };
+                // Carica app.js dopo aver preparato i dati
+                var s = document.createElement("script");
+                s.src = "assets/app.js";
+                document.body.appendChild(s);
+            })
+            .catch(function(err) {
+                window.multeGdprData = { fines: [], metadata: {}, error: true };
+                var s = document.createElement("script");
+                s.src = "assets/app.js";
+                document.body.appendChild(s);
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+name: Update GDPR Fines Data
+
+on:
+  schedule:
+    # Ogni 6 ore
+    - cron: "0 */6 * * *"
+  workflow_dispatch: # Trigger manuale
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scraper/requirements.txt
+
+      - name: Backup previous JSON (if exists)
+        run: |
+          if [ -f data/gdpr_fines.json ]; then
+            cp data/gdpr_fines.json data/gdpr_fines_prev.json
+          fi
+
+      - name: Run scraper
+        run: python scraper/scrape.py
+
+      - name: Validate output
+        run: python scraper/validate.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/gdpr_fines.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push updated data
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/gdpr_fines.json
+          RECORD_COUNT=$(python -c "import json; d=json.load(open('data/gdpr_fines.json')); print(d['metadata']['total_records'])")
+          git commit -m "chore: update GDPR fines data (${RECORD_COUNT} records)
+
+          Automated update from enforcementtracker.com
+          Source: CC BY-NC-SA 4.0"
+          git push
+
+      - name: Cleanup previous snapshot
+        if: always()
+        run: rm -f data/gdpr_fines_prev.json
