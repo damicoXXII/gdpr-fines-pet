@@ -1,4 +1,4 @@
-# GDPR Fines PET
+# GDPR Fines PET - Un plugin WP privacy-first per informare e formare sulle sanzioni GDPR su scala europea.
 
 Tabella interattiva in chiave PET (Privacy Enhanced Technology - Tecnologia a Protezione della Privacy) delle sanzioni GDPR europee. 
 Dati estratti da [enforcementtracker.com](https://www.enforcementtracker.com/) (CMS.Law).
