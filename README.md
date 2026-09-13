@@ -1,16 +1,25 @@
 # GDPR Fines PET
 
-Tabella interattiva delle sanzioni GDPR europee per [Eticarium](https://www.eticarium.net/), con dati estratti da [enforcementtracker.com](https://www.enforcementtracker.com/) (CMS.Law).
+Tabella interattiva in chiave PET (Privacy Enhanced Technology - Tecnologia a Protezione della Privacy) delle sanzioni GDPR europee. 
+Dati estratti da [enforcementtracker.com](https://www.enforcementtracker.com/) (CMS.Law).
 
 ## Caratteristiche
 
-- **Scraper Python** che estrae ~3200+ sanzioni GDPR in un singolo passaggio
+- **Scraper Python** che estrae le sanzioni GDPR in un singolo passaggio
 - **Plugin WordPress** con shortcode `[gdpr_fines_table]` per integrazione nativa
 - **Tabella filtrabile e ordinabile**: ricerca testuale, filtro per paese, range importo
-- **Soggetti censurati**: i nomi delle entità sanzionate sono oscurati (barre nere cliccabili che rimandano al sito originale)
-- **Aggiornamento automatico** ogni 6 ore tramite GitHub Actions
-- **Responsive**: funziona su desktop e mobile
-- **Attribuzione CC BY-NC-SA 4.0** conforme alla licenza della fonte dati
+- **Aggiornamento automatico** ogni 6 ore tramite GitHub Actions.
+- **Responsive**: funziona su desktop, tablet e smartphone moderni.
+- **Attribuzione CC BY-NC-SA 4.0** incorporata, cconforme alla licenza della fonte dati menzionata sopra.
+
+## Caratteristiche PET
+Da codice:
+- **Soggetti censurati**: i nomi delle entità sanzionate sono oscurati. Si può visualizzare i soggetti cliccando sopra la barra di censura.
+- **Nessun tracker**: il plugin non raccoglie dati di utilizzo del sito web in cui è inserito o degli utenti finali.
+
+Suggeriti lato WP:
+- **Doppio controllo di visualizzazione**: se si clicca un soggetto oscurato, una modale (o tecnologie affini) come check di reinvio al sito originale ("https://www.enforcementtracker.com/[IDSANZIONE]")
+- **Privacy by design e default**: principi applicati a tutto il sito, non solo per finalità di compliance :)
 
 ## Struttura del progetto
 
