@@ -1,4 +1,4 @@
-# Multe GDPR – Enforcement Tracker Dashboard
+# GDPR Fines PET
 
 Tabella interattiva delle sanzioni GDPR europee per [Eticarium](https://www.eticarium.net/), con dati estratti da [enforcementtracker.com](https://www.enforcementtracker.com/) (CMS.Law).
 
@@ -15,7 +15,7 @@ Tabella interattiva delle sanzioni GDPR europee per [Eticarium](https://www.etic
 ## Struttura del progetto
 
 ```
-multe-gdpr/
+gdpr-fines-pet/
 ├── scraper/
 │   ├── scrape.py              # Scraper Python principale
 │   ├── validate.py            # Validazione e confronto dati
@@ -23,7 +23,7 @@ multe-gdpr/
 ├── data/
 │   └── gdpr_fines.json        # Dati estratti (generato dallo scraper)
 ├── plugin/
-│   ├── multe-gdpr.php         # Plugin WordPress principale
+│   ├── gdpr-fines-pet.php         # Plugin WordPress principale
 │   ├── includes/
 │   │   └── class-gdpr-fines-table.php  # Classe rendering tabella
 │   └── assets/
@@ -50,8 +50,8 @@ multe-gdpr/
 
 ```bash
 # Clona il repository
-git clone https://github.com/TUO-UTENTE/multe-gdpr.git
-cd multe-gdpr
+git clone https://github.com/TUO-UTENTE/gdpr-fines-pet.git
+cd gdpr-fines-pet
 
 # Installa le dipendenze Python
 pip install -r scraper/requirements.txt
@@ -65,10 +65,10 @@ python scraper/validate.py
 
 ### 3. Installazione del plugin WordPress
 
-1. Copia l'intera cartella `plugin/` dentro `wp-content/plugins/` del tuo WordPress, rinominandola `multe-gdpr`:
+1. Copia l'intera cartella `plugin/` dentro `wp-content/plugins/` del tuo WordPress, rinominandola `gdpr-fines-pet`:
    ```
-   wp-content/plugins/multe-gdpr/
-   ├── multe-gdpr.php
+   wp-content/plugins/gdpr-fines-pet/
+   ├── gdpr-fines-pet.php
    ├── includes/
    │   └── class-gdpr-fines-table.php
    └── assets/
@@ -76,10 +76,10 @@ python scraper/validate.py
        └── app.js
    ```
 2. Accedi al pannello di amministrazione WordPress
-3. Vai su **Plugin > Plugin installati** e attiva **Multe GDPR – Enforcement Tracker**
-4. Vai su **Impostazioni > Multe GDPR** e inserisci l'URL raw del JSON:
+3. Vai su **Plugin > Plugin installati** e attiva **GDPR Fines PET**
+4. Vai su **Impostazioni > GDPR Fines PET** e inserisci l'URL raw del JSON:
    ```
-   https://raw.githubusercontent.com/TUO-UTENTE/multe-gdpr/main/data/gdpr_fines.json
+   https://raw.githubusercontent.com/TUO-UTENTE/gdpr-fines-pet/main/data/gdpr_fines.json
    ```
 5. Crea o modifica una pagina e inserisci lo shortcode:
    ```
@@ -103,7 +103,7 @@ Se non vuoi usare GitHub Actions, puoi impostare un cron job:
 
 ```bash
 # Esegui ogni 6 ore
-0 */6 * * * cd /path/to/multe-gdpr && /usr/bin/python3 scraper/scrape.py >> logs/scraper.log 2>&1
+0 */6 * * * cd /path/to/gdpr-fines-pet && /usr/bin/python3 scraper/scrape.py >> logs/scraper.log 2>&1
 ```
 
 ## Servire la pagina in locale (solo per sviluppo/test)
@@ -127,7 +127,7 @@ Se per qualche motivo preferisci un iframe anziché il plugin:
 
 ```html
 <iframe
-  src="https://TUO-UTENTE.github.io/multe-gdpr/plugin/"
+  src="https://TUO-UTENTE.github.io/gdpr-fines-pet/plugin/"
   width="100%"
   height="800"
   style="border: none; max-width: 100%;"

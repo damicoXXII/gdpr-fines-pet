@@ -1,5 +1,5 @@
 /**
- * Multe GDPR – Frontend Application
+ * GDPR Fines PET – Frontend Application
  *
  * Legge i dati passati da WordPress (via wp_localize_script) e popola
  * la tabella con filtri, ordinamento e paginazione.
@@ -34,36 +34,36 @@
        Inizializzazione
        ================================================================== */
     function init() {
-        dom.root       = document.getElementById("multe-gdpr-root");
-        dom.total      = document.getElementById("multe-gdpr-total");
-        dom.updated    = document.getElementById("multe-gdpr-updated");
-        dom.search     = document.getElementById("multe-gdpr-search");
-        dom.country    = document.getElementById("multe-gdpr-country");
-        dom.fineMin    = document.getElementById("multe-gdpr-fine-min");
-        dom.fineMax    = document.getElementById("multe-gdpr-fine-max");
-        dom.resetBtn   = document.getElementById("multe-gdpr-reset");
-        dom.tbody      = document.getElementById("multe-gdpr-tbody");
-        dom.pagination = document.getElementById("multe-gdpr-pagination");
-        dom.table      = document.getElementById("multe-gdpr-table");
+        dom.root       = document.getElementById("gdpr-fines-pet-root");
+        dom.total      = document.getElementById("gdpr-fines-pet-total");
+        dom.updated    = document.getElementById("gdpr-fines-pet-updated");
+        dom.search     = document.getElementById("gdpr-fines-pet-search");
+        dom.country    = document.getElementById("gdpr-fines-pet-country");
+        dom.fineMin    = document.getElementById("gdpr-fines-pet-fine-min");
+        dom.fineMax    = document.getElementById("gdpr-fines-pet-fine-max");
+        dom.resetBtn   = document.getElementById("gdpr-fines-pet-reset");
+        dom.tbody      = document.getElementById("gdpr-fines-pet-tbody");
+        dom.pagination = document.getElementById("gdpr-fines-pet-pagination");
+        dom.table      = document.getElementById("gdpr-fines-pet-table");
 
         if (!dom.root) return;
 
         // Dati iniettati da WordPress
-        if (typeof multeGdprData === "undefined") {
+        if (typeof gdprFinesPetData === "undefined") {
             showError("Dati non disponibili. Verificare la configurazione del plugin.");
             return;
         }
 
-        if (multeGdprData.error) {
+        if (gdprFinesPetData.error) {
             showError(
                 "Impossibile caricare i dati. Verificare l'URL del JSON " +
-                "nelle impostazioni del plugin (Impostazioni > Multe GDPR)."
+                "nelle impostazioni del plugin (Impostazioni > GDPR Fines PET)."
             );
             return;
         }
 
-        allFines = multeGdprData.fines || [];
-        var metadata = multeGdprData.metadata || {};
+        allFines = gdprFinesPetData.fines || [];
+        var metadata = gdprFinesPetData.metadata || {};
 
         // Popola header
         dom.total.textContent = formatNumber(metadata.total_records || allFines.length);
@@ -149,10 +149,10 @@
     function updateSortIndicators() {
         var ths = dom.table.querySelectorAll("thead th[data-sort]");
         for (var i = 0; i < ths.length; i++) {
-            ths[i].classList.remove("multe-gdpr--sort-asc", "multe-gdpr--sort-desc");
+            ths[i].classList.remove("gdpr-fines-pet--sort-asc", "gdpr-fines-pet--sort-desc");
             if (ths[i].getAttribute("data-sort") === sortField) {
                 ths[i].classList.add(
-                    sortDir === "asc" ? "multe-gdpr--sort-asc" : "multe-gdpr--sort-desc"
+                    sortDir === "asc" ? "gdpr-fines-pet--sort-asc" : "gdpr-fines-pet--sort-desc"
                 );
             }
         }
@@ -256,7 +256,7 @@
 
         if (page.length === 0) {
             dom.tbody.innerHTML =
-                '<tr><td colspan="7" class="multe-gdpr__empty">' +
+                '<tr><td colspan="7" class="gdpr-fines-pet__empty">' +
                 "Nessuna sanzione trovata con i filtri selezionati." +
                 "</td></tr>";
             return;
@@ -272,14 +272,14 @@
             html +=
                 '<td><a href="' + escAttr(r.detail_url || "#") + '" ' +
                 'target="_blank" rel="noopener noreferrer" ' +
-                'class="multe-gdpr__redacted" ' +
+                'class="gdpr-fines-pet__redacted" ' +
                 'title="Visualizza dettagli su enforcementtracker.com">' +
                 REDACTED_TEXT +
-                '<span class="multe-gdpr__sr-only">Visualizza dettagli della sanzione ETid-' +
+                '<span class="gdpr-fines-pet__sr-only">Visualizza dettagli della sanzione ETid-' +
                 escHtml(String(r.etid || "")) + "</span>" +
                 "</a></td>";
             html +=
-                '<td class="multe-gdpr__fine">' +
+                '<td class="gdpr-fines-pet__fine">' +
                 formatCurrency(r.fine_eur) +
                 "</td>";
             html += "<td>" + escHtml(r.sector || "N/D") + "</td>";
@@ -297,7 +297,7 @@
         var totalPages = Math.ceil(filteredFines.length / ROWS_PER_PAGE);
         if (totalPages <= 1) {
             dom.pagination.innerHTML =
-                '<span class="multe-gdpr__page-info">' +
+                '<span class="gdpr-fines-pet__page-info">' +
                 filteredFines.length + " risultat" +
                 (filteredFines.length === 1 ? "o" : "i") + "</span>";
             return;
@@ -307,8 +307,8 @@
 
         // Prev button
         html +=
-            '<button class="multe-gdpr__page-btn' +
-            (currentPage === 1 ? " multe-gdpr__page-btn--disabled" : "") +
+            '<button class="gdpr-fines-pet__page-btn' +
+            (currentPage === 1 ? " gdpr-fines-pet__page-btn--disabled" : "") +
             '" data-page="' + (currentPage - 1) + '">&laquo;</button>';
 
         // Page numbers (show max 7 around current)
@@ -316,33 +316,33 @@
         for (var i = 0; i < pages.length; i++) {
             var p = pages[i];
             if (p === "...") {
-                html += '<span class="multe-gdpr__page-info">&hellip;</span>';
+                html += '<span class="gdpr-fines-pet__page-info">&hellip;</span>';
             } else {
                 html +=
-                    '<button class="multe-gdpr__page-btn' +
-                    (p === currentPage ? " multe-gdpr__page-btn--active" : "") +
+                    '<button class="gdpr-fines-pet__page-btn' +
+                    (p === currentPage ? " gdpr-fines-pet__page-btn--active" : "") +
                     '" data-page="' + p + '">' + p + "</button>";
             }
         }
 
         // Next button
         html +=
-            '<button class="multe-gdpr__page-btn' +
-            (currentPage === totalPages ? " multe-gdpr__page-btn--disabled" : "") +
+            '<button class="gdpr-fines-pet__page-btn' +
+            (currentPage === totalPages ? " gdpr-fines-pet__page-btn--disabled" : "") +
             '" data-page="' + (currentPage + 1) + '">&raquo;</button>';
 
         // Info
         var start = (currentPage - 1) * ROWS_PER_PAGE + 1;
         var end = Math.min(currentPage * ROWS_PER_PAGE, filteredFines.length);
         html +=
-            '<span class="multe-gdpr__page-info">' +
+            '<span class="gdpr-fines-pet__page-info">' +
             start + "-" + end + " di " + formatNumber(filteredFines.length) +
             "</span>";
 
         dom.pagination.innerHTML = html;
 
         // Bind page clicks
-        var btns = dom.pagination.querySelectorAll(".multe-gdpr__page-btn");
+        var btns = dom.pagination.querySelectorAll(".gdpr-fines-pet__page-btn");
         for (var j = 0; j < btns.length; j++) {
             btns[j].addEventListener("click", function (e) {
                 var page = parseInt(e.currentTarget.getAttribute("data-page"), 10);
@@ -435,10 +435,10 @@
     }
 
     function showError(msg) {
-        var tbody = document.getElementById("multe-gdpr-tbody");
+        var tbody = document.getElementById("gdpr-fines-pet-tbody");
         if (tbody) {
             tbody.innerHTML =
-                '<tr><td colspan="7" class="multe-gdpr__error">' +
+                '<tr><td colspan="7" class="gdpr-fines-pet__error">' +
                 escHtml(msg) +
                 "</td></tr>";
         }

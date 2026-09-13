@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multe GDPR – Test Standalone</title>
+    <title>GDPR Fines PET – Test Standalone</title>
     <link rel="stylesheet" href="assets/style.css">
     <style>
         body {
@@ -17,45 +17,45 @@
     </style>
 </head>
 <body>
-    <h1>Multe GDPR – Test Standalone (senza WordPress)</h1>
+    <h1>GDPR Fines PET – Test Standalone (senza WordPress)</h1>
 
-    <div id="multe-gdpr-root" class="multe-gdpr">
-        <div class="multe-gdpr__header">
-            <div class="multe-gdpr__stats">
-                <span class="multe-gdpr__count">
+    <div id="gdpr-fines-pet-root" class="gdpr-fines-pet">
+        <div class="gdpr-fines-pet__header">
+            <div class="gdpr-fines-pet__stats">
+                <span class="gdpr-fines-pet__count">
                     Totale sanzioni tracciate:
-                    <strong id="multe-gdpr-total">--</strong>
+                    <strong id="gdpr-fines-pet-total">--</strong>
                 </span>
-                <span class="multe-gdpr__updated">
+                <span class="gdpr-fines-pet__updated">
                     Ultimo aggiornamento:
-                    <em id="multe-gdpr-updated">--</em>
+                    <em id="gdpr-fines-pet-updated">--</em>
                 </span>
             </div>
         </div>
 
-        <div class="multe-gdpr__filters">
-            <div class="multe-gdpr__filter-row">
-                <input type="text" id="multe-gdpr-search" class="multe-gdpr__input"
+        <div class="gdpr-fines-pet__filters">
+            <div class="gdpr-fines-pet__filter-row">
+                <input type="text" id="gdpr-fines-pet-search" class="gdpr-fines-pet__input"
                        placeholder="Cerca per paese, autorit&agrave;, settore..." />
-                <select id="multe-gdpr-country" class="multe-gdpr__select">
+                <select id="gdpr-fines-pet-country" class="gdpr-fines-pet__select">
                     <option value="">Tutti i paesi</option>
                 </select>
             </div>
-            <div class="multe-gdpr__filter-row">
-                <input type="number" id="multe-gdpr-fine-min"
-                       class="multe-gdpr__input multe-gdpr__input--short"
+            <div class="gdpr-fines-pet__filter-row">
+                <input type="number" id="gdpr-fines-pet-fine-min"
+                       class="gdpr-fines-pet__input gdpr-fines-pet__input--short"
                        placeholder="Importo min (EUR)" min="0" />
-                <input type="number" id="multe-gdpr-fine-max"
-                       class="multe-gdpr__input multe-gdpr__input--short"
+                <input type="number" id="gdpr-fines-pet-fine-max"
+                       class="gdpr-fines-pet__input gdpr-fines-pet__input--short"
                        placeholder="Importo max (EUR)" min="0" />
-                <button type="button" id="multe-gdpr-reset" class="multe-gdpr__btn">
+                <button type="button" id="gdpr-fines-pet-reset" class="gdpr-fines-pet__btn">
                     Reset filtri
                 </button>
             </div>
         </div>
 
-        <div class="multe-gdpr__table-wrap">
-            <table class="multe-gdpr__table" id="multe-gdpr-table">
+        <div class="gdpr-fines-pet__table-wrap">
+            <table class="gdpr-fines-pet__table" id="gdpr-fines-pet-table">
                 <thead>
                     <tr>
                         <th data-sort="date">Data</th>
@@ -67,9 +67,9 @@
                         <th data-sort="articles">Articoli GDPR</th>
                     </tr>
                 </thead>
-                <tbody id="multe-gdpr-tbody">
+                <tbody id="gdpr-fines-pet-tbody">
                     <tr>
-                        <td colspan="7" class="multe-gdpr__loading">
+                        <td colspan="7" class="gdpr-fines-pet__loading">
                             Caricamento dati...
                         </td>
                     </tr>
@@ -77,28 +77,28 @@
             </table>
         </div>
 
-        <div class="multe-gdpr__pagination" id="multe-gdpr-pagination"></div>
+        <div class="gdpr-fines-pet__pagination" id="gdpr-fines-pet-pagination"></div>
 
-        <div class="multe-gdpr__footer">
+        <div class="gdpr-fines-pet__footer">
             <p>
                 Dati forniti da
                 <a href="https://www.enforcementtracker.com/" target="_blank" rel="noopener noreferrer">enforcementtracker.com (CMS.Law)</a>,
                 rilasciati sotto licenza
                 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>.
             </p>
-            <p class="multe-gdpr__footer-note">
+            <p class="gdpr-fines-pet__footer-note">
                 I nomi dei soggetti sanzionati sono oscurati. Per visualizzare i dettagli completi, clicca sul link nella colonna "Soggetto".
             </p>
         </div>
     </div>
 
     <!-- In modalità standalone, carichiamo il JSON direttamente e
-         costruiamo multeGdprData prima che app.js si inizializzi. -->
+         costruiamo gdprFinesPetData prima che app.js si inizializzi. -->
     <script>
         fetch("../data/gdpr_fines.json")
             .then(function(r) { return r.json(); })
             .then(function(data) {
-                window.multeGdprData = {
+                window.gdprFinesPetData = {
                     fines: data.fines || [],
                     metadata: data.metadata || {},
                     error: false
@@ -109,7 +109,7 @@
                 document.body.appendChild(s);
             })
             .catch(function(err) {
-                window.multeGdprData = { fines: [], metadata: {}, error: true };
+                window.gdprFinesPetData = { fines: [], metadata: {}, error: true };
                 var s = document.createElement("script");
                 s.src = "assets/app.js";
                 document.body.appendChild(s);
