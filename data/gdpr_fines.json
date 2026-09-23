@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-23T12:25:56Z",
-    "total_records": 3270,
+    "last_updated": "2026-09-23T18:22:00Z",
+    "total_records": 3275,
     "source_url": "https://www.enforcementtracker.com/",
     "attribution": "enforcementtracker.com, provided by CMS",
     "license": "Creative Commons BY-NC-SA 4.0",
@@ -98,6 +98,66 @@
       "violation_type": "Non-compliance with general data processing principles",
       "source_url": "https://www.dataprotection.ro/index.jsp?page=Comunicat_Presa_31.07.2026",
       "detail_url": "https://www.enforcementtracker.com/ETid-3224"
+    },
+    {
+      "etid": 3274,
+      "country_code": "ITALY",
+      "country": "Italy",
+      "authority": "Italian Data Protection Authority (Garante)",
+      "party_hash": "5f45c8e000cd",
+      "fine_eur": 10000,
+      "date": "2026-07-23",
+      "year": null,
+      "sector": "Public Sector and Education",
+      "gdpr_articles": "Art. 5 (1) A) GDPR, Art. 6 (1) c), e), (2), (3) GDPR",
+      "violation_type": "Insufficient legal basis for data processing",
+      "source_url": "https://www.gpdp.it/web/guest/home/docweb/-/docweb-display/docweb/10287373",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3274"
+    },
+    {
+      "etid": 3273,
+      "country_code": "ITALY",
+      "country": "Italy",
+      "authority": "Italian Data Protection Authority (Garante)",
+      "party_hash": "66724f910813",
+      "fine_eur": 10000,
+      "date": "2026-07-23",
+      "year": null,
+      "sector": "Health Care",
+      "gdpr_articles": "Art. 5 GDPR, Art. 6 GDPR, Art. 9 GDPR",
+      "violation_type": "Insufficient legal basis for data processing",
+      "source_url": "https://www.gpdp.it/web/guest/home/docweb/-/docweb-display/docweb/10287326",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3273"
+    },
+    {
+      "etid": 3272,
+      "country_code": "ITALY",
+      "country": "Italy",
+      "authority": "Italian Data Protection Authority (Garante)",
+      "party_hash": "1370ba029e91",
+      "fine_eur": 6500,
+      "date": "2026-07-23",
+      "year": null,
+      "sector": "Not assigned",
+      "gdpr_articles": "Art. 5 (1) a), c), e) GDPR, Art. 13 GDPR",
+      "violation_type": "Non-compliance with general data processing principles",
+      "source_url": "https://www.gpdp.it/web/guest/home/docweb/-/docweb-display/docweb/10287400",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3272"
+    },
+    {
+      "etid": 3271,
+      "country_code": "ITALY",
+      "country": "Italy",
+      "authority": "Italian Data Protection Authority (Garante)",
+      "party_hash": "5451b116791b",
+      "fine_eur": 9516000,
+      "date": "2026-07-23",
+      "year": null,
+      "sector": "Media, Telecoms and Broadcasting",
+      "gdpr_articles": "Art. 5 GDPR, Art. 6 GDPR, Art. 7 (1), (2) GDPR, Art. 15 GDPR, Art. 22 GDPR, Art. 24 GDPR, Art. 25 GDPR, Art. 28 GDPR, Art. 32 GDPR",
+      "violation_type": "Non-compliance with general data processing principles",
+      "source_url": "https://www.gpdp.it/web/guest/home/docweb/-/docweb-display/docweb/10277005",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3271"
     },
     {
       "etid": 3270,
@@ -548,6 +608,21 @@
       "violation_type": "Insufficient technical and organisational measures to ensure information security",
       "source_url": "https://www.dataprotection.ro/index.jsp?page=Comunicat_Presa_15_06_2026",
       "detail_url": "https://www.enforcementtracker.com/ETid-3196"
+    },
+    {
+      "etid": 3275,
+      "country_code": "POLAND",
+      "country": "Poland",
+      "authority": "Polish National Personal Data Protection Office (UODO)",
+      "party_hash": "6a4c48453748",
+      "fine_eur": 2760,
+      "date": "2026-06-13",
+      "year": null,
+      "sector": "Finance, Insurance and Consulting",
+      "gdpr_articles": "Art. 5 (1) f), (2) GDPR, Art. 25 (1) GDPR, Art. 32 (1), (2) GDPR",
+      "violation_type": "Insufficient technical and organisational measures to ensure information security",
+      "source_url": "https://orzeczenia.uodo.gov.pl/document/urn:ndoc:gov:pl:uodo:2023:dkn_5131_34/content",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3275"
     },
     {
       "etid": 3206,
