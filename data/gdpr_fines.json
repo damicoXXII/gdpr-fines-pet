@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-09-23T06:30:30Z",
+    "last_updated": "2026-09-23T12:25:56Z",
     "total_records": 3270,
     "source_url": "https://www.enforcementtracker.com/",
     "attribution": "enforcementtracker.com, provided by CMS",
@@ -209,7 +209,7 @@
       "country_code": "ITALY",
       "country": "Italy",
       "authority": "Italian Data Protection Authority (Garante)",
-      "party_hash": "278445dbc1c4",
+      "party_hash": "97ade660501a",
       "fine_eur": 120000,
       "date": "2026-07-14",
       "year": null,
@@ -4020,7 +4020,7 @@
       "country": "Belgium",
       "authority": "Belgian Data Protection Authority (APD)",
       "party_hash": "dd34a8ec3ecb",
-      "fine_eur": 40000,
+      "fine_eur": 5000,
       "date": "2025-11-27",
       "year": null,
       "sector": "Industry and Commerce",
