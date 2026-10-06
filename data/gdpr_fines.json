@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-06T06:31:07Z",
-    "total_records": 3295,
+    "last_updated": "2026-10-06T12:26:47Z",
+    "total_records": 3292,
     "source_url": "https://www.enforcementtracker.com/",
     "attribution": "enforcementtracker.com, provided by CMS",
     "license": "Creative Commons BY-NC-SA 4.0",
@@ -10,10 +10,10 @@
   },
   "fines": [
     {
-      "etid": 3282,
+      "etid": 3281,
       "country_code": "IRELAND",
       "country": "Ireland",
-      "authority": "Data Protection Commission (DPC)",
+      "authority": "Data Protection Authority of Ireland",
       "party_hash": "af5f7181afd0",
       "fine_eur": 403000000,
       "date": "2026-09-21",
@@ -22,7 +22,7 @@
       "gdpr_articles": "Art. 5 GDPR, Art. 6 GDPR, Art. 12 GDPR, Art. 13 GDPR",
       "violation_type": "Insufficient legal basis for data processing",
       "source_url": "https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3282"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3281"
     },
     {
       "etid": 3269,
@@ -70,7 +70,7 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3267"
     },
     {
-      "etid": 3294,
+      "etid": 3291,
       "country_code": "ROMANIA",
       "country": "Romania",
       "authority": "Romanian National Supervisory Authority for Personal Data Processing (ANSPDCP)",
@@ -82,7 +82,7 @@
       "gdpr_articles": "Art. 32 (1) b), (2) GDPR",
       "violation_type": "Insufficient technical and organisational measures to ensure information security",
       "source_url": "https://www.dataprotection.ro/index.jsp?page=Comunicat_Presa_28.08.2026",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3294"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3291"
     },
     {
       "etid": 3232,
@@ -100,7 +100,7 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3232"
     },
     {
-      "etid": 3293,
+      "etid": 3290,
       "country_code": "ROMANIA",
       "country": "Romania",
       "authority": "Romanian National Supervisory Authority for Personal Data Processing (ANSPDCP)",
@@ -112,10 +112,10 @@
       "gdpr_articles": "Art. 32 (1) b), (2) GDPR",
       "violation_type": "Insufficient technical and organisational measures to ensure information security",
       "source_url": "https://www.dataprotection.ro/index.jsp?page=Comunicat_Presa_19_08_2026",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3293"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3290"
     },
     {
-      "etid": 3295,
+      "etid": 3292,
       "country_code": "ITALY",
       "country": "Italy",
       "authority": "Italian Data Protection Authority (Garante)",
@@ -127,7 +127,7 @@
       "gdpr_articles": "Art. 12 (3), (4) GDPR, Art. 15 GDPR, Art. 31 GDPR",
       "violation_type": "Insufficient fulfilment of data subjects rights",
       "source_url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10297109",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3295"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3292"
     },
     {
       "etid": 3225,
@@ -805,7 +805,7 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3245"
     },
     {
-      "etid": 3281,
+      "etid": 3280,
       "country_code": "GREECE",
       "country": "Greece",
       "authority": "Hellenic Data Protection Authority (HDPA)",
@@ -817,10 +817,10 @@
       "gdpr_articles": "Art. 15 GDPR",
       "violation_type": "Insufficient fulfilment of data subjects rights",
       "source_url": "https://www.dpa.gr/sites/default/files/2026-07/8_2026%20anonym.pdf",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3281"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3280"
     },
     {
-      "etid": 3280,
+      "etid": 3279,
       "country_code": "GREECE",
       "country": "Greece",
       "authority": "Hellenic Data Protection Authority (HDPA)",
@@ -832,7 +832,7 @@
       "gdpr_articles": "Art. 5 (1) d) GDPR, Art. 12 (1), (3) GDPR, Art. 15 (1) GDPR, Art. 28 (1) GDPR",
       "violation_type": "Insufficient fulfilment of data subjects rights",
       "source_url": "https://www.dpa.gr/sites/default/files/2026-07/8_2026%20anonym.pdf",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3280"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3279"
     },
     {
       "etid": 3199,
@@ -850,7 +850,7 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3199"
     },
     {
-      "etid": 3287,
+      "etid": 3286,
       "country_code": "GREECE",
       "country": "Greece",
       "authority": "Hellenic Data Protection Authority (HDPA)",
@@ -862,10 +862,10 @@
       "gdpr_articles": "Art. 32 GDPR",
       "violation_type": "Insufficient technical and organisational measures to ensure information security",
       "source_url": "https://www.dpa.gr/sites/default/files/2026-07/7_2026%20anonym.pdf",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3287"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3286"
     },
     {
-      "etid": 3286,
+      "etid": 3285,
       "country_code": "GREECE",
       "country": "Greece",
       "authority": "Hellenic Data Protection Authority (HDPA)",
@@ -877,10 +877,10 @@
       "gdpr_articles": "Art. 28 GDPR, Art. 29 GDPR, Art. 32 GDPR",
       "violation_type": "Insufficient technical and organisational measures to ensure information security",
       "source_url": "https://www.dpa.gr/sites/default/files/2026-07/7_2026%20anonym.pdf",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3286"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3285"
     },
     {
-      "etid": 3285,
+      "etid": 3284,
       "country_code": "GREECE",
       "country": "Greece",
       "authority": "Hellenic Data Protection Authority (HDPA)",
@@ -892,10 +892,10 @@
       "gdpr_articles": "Art. 5 (1) a), b), d), e) GDPR, Art. 32 GDPR",
       "violation_type": "Insufficient technical and organisational measures to ensure information security",
       "source_url": "https://www.dpa.gr/sites/default/files/2026-07/7_2026%20anonym.pdf",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3285"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3284"
     },
     {
-      "etid": 3284,
+      "etid": 3283,
       "country_code": "GREECE",
       "country": "Greece",
       "authority": "Hellenic Data Protection Authority (HDPA)",
@@ -907,10 +907,10 @@
       "gdpr_articles": "Art. 32 GDPR",
       "violation_type": "Insufficient technical and organisational measures to ensure information security",
       "source_url": "https://www.dpa.gr/sites/default/files/2026-07/7_2026%20anonym.pdf",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3284"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3283"
     },
     {
-      "etid": 3283,
+      "etid": 3282,
       "country_code": "GREECE",
       "country": "Greece",
       "authority": "Hellenic Data Protection Authority (HDPA)",
@@ -922,7 +922,7 @@
       "gdpr_articles": "Art. 5 (1) a), b), d), e) GDPR, Art. 32 GDPR",
       "violation_type": "Insufficient legal basis for data processing",
       "source_url": "https://www.dpa.gr/sites/default/files/2026-07/7_2026%20anonym.pdf",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3283"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3282"
     },
     {
       "etid": 3188,
@@ -953,21 +953,6 @@
       "violation_type": "Insufficient legal basis for data processing",
       "source_url": "https://www.datatilsynet.no/contentassets/c8d0551d2a64403285e006f76170b8b6/elkjop---vedtak-om-overtredelsesgebyr---kundeklubb-og-de-registrertes-rettigheter.pdf",
       "detail_url": "https://www.enforcementtracker.com/ETid-3193"
-    },
-    {
-      "etid": 3291,
-      "country_code": "HUNGARY",
-      "country": "Hungary",
-      "authority": "Hungarian National Authority for Data Protection and the Freedom of Information (NAIH)",
-      "party_hash": "f5632baffd6e",
-      "fine_eur": 70518,
-      "date": "2026-05-29",
-      "year": null,
-      "sector": "Media, Telecoms and Broadcasting",
-      "gdpr_articles": "Art. 6 (1) f) GDPR, Art. 9 (1) GDPR, Art. 12 (4) GDPR",
-      "violation_type": "Insufficient legal basis for data processing",
-      "source_url": "https://naih.hu/hatarozatok-vegzesek?download=1499:nem-kozszereplo-szemelyes-es-kulonleges-adatainak-online-sajtotermekben-torteno-nyilvanossagra-hozatala",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3291"
     },
     {
       "etid": 3194,
@@ -1105,21 +1090,6 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3234"
     },
     {
-      "etid": 3290,
-      "country_code": "HUNGARY",
-      "country": "Hungary",
-      "authority": "Hungarian National Authority for Data Protection and the Freedom of Information (NAIH)",
-      "party_hash": "4d9133b9fd23",
-      "fine_eur": 140127,
-      "date": "2026-05-26",
-      "year": null,
-      "sector": "Media, Telecoms and Broadcasting",
-      "gdpr_articles": "Art. 6 (1) GDPR, Art. 9 (1) GDPR",
-      "violation_type": "Insufficient legal basis for data processing",
-      "source_url": "https://naih.hu/hatarozatok-vegzesek?download=1497:a-tisza-partot-erinto-adatszivargas-alapjan-keszitett-terkep-elerhetosegenek-a-mediaworks-hungary-zrt-hirportaljain-megjelent-cikkekben-valo-kozzetetele",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3290"
-    },
-    {
       "etid": 3187,
       "country_code": "HUNGARY",
       "country": "Hungary",
@@ -1180,7 +1150,7 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3276"
     },
     {
-      "etid": 3279,
+      "etid": 3278,
       "country_code": "POLAND",
       "country": "Poland",
       "authority": "Polish National Personal Data Protection Office (UODO)",
@@ -1192,7 +1162,7 @@
       "gdpr_articles": "Art. 58 (2) d) GDPR, Art. 83 (6) GDPR",
       "violation_type": "Insufficient cooperation with supervisory authority",
       "source_url": "https://orzeczenia.uodo.gov.pl/document/urn:ndoc:gov:pl:uodo:2026:dke_561_4/content?query=",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3279"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3278"
     },
     {
       "etid": 3170,
@@ -1360,7 +1330,7 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3217"
     },
     {
-      "etid": 3289,
+      "etid": 3288,
       "country_code": "HUNGARY",
       "country": "Hungary",
       "authority": "Hungarian National Authority for Data Protection and the Freedom of Information (NAIH)",
@@ -1372,7 +1342,7 @@
       "gdpr_articles": "Art. 5 (1) a) GDPR, Art. 12 (1) GDPR, Art. 13 (1) a), c), d), e), f) GDPR, Art. 13 (2) a), b), c), d), e), f) GDPR",
       "violation_type": "Insufficient fulfilment of information obligations",
       "source_url": "https://naih.hu/hatarozatok-vegzesek?download=1559:tajekoztatasi-hianyossagok-webaruhaz-adatkezelese-soran",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3289"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3288"
     },
     {
       "etid": 3174,
@@ -1465,7 +1435,7 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3147"
     },
     {
-      "etid": 3288,
+      "etid": 3287,
       "country_code": "HUNGARY",
       "country": "Hungary",
       "authority": "Hungarian National Authority for Data Protection and the Freedom of Information (NAIH)",
@@ -1477,7 +1447,7 @@
       "gdpr_articles": "Art. 5 (1) a) GDPR, Art. 5 (2) GDPR, Art. 12 (1) GDPR, Art. 13 (1) a), c), e) GDPR, Art. 13 (2) a), b), c), d), e) GDPR",
       "violation_type": "Insufficient fulfilment of information obligations",
       "source_url": "https://naih.hu/hatarozatok-vegzesek?download=1558:tajekoztatasi-hianyossagok-webaruhaz-adatkezelese-soran",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3288"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3287"
     },
     {
       "etid": 3213,
@@ -1868,21 +1838,6 @@
       "violation_type": "Insufficient legal basis for data processing",
       "source_url": "https://www.ip-rs.si/novice/nezakonito-gps-sledenje-zaposlenim-informacijski-poobla%C5%A1%C4%8Denec-javnemu-komunalnemu-podjetju-izrekel-globo-v-vi%C5%A1ini-6000-eur-1776238559",
       "detail_url": "https://www.enforcementtracker.com/ETid-3111"
-    },
-    {
-      "etid": 3278,
-      "country_code": "POLAND",
-      "country": "Poland",
-      "authority": "Polish National Personal Data Protection Office (UODO)",
-      "party_hash": "60377506a8b2",
-      "fine_eur": 2415,
-      "date": "2026-04-13",
-      "year": null,
-      "sector": "Industry and Commerce",
-      "gdpr_articles": "Art. 32 (1), (2) GDPR, Art. 28 (4) GDPR",
-      "violation_type": "Insufficient technical and organisational measures to ensure information security",
-      "source_url": "https://orzeczenia.uodo.gov.pl/document/urn:ndoc:gov:pl:uodo:2022:dkn_5131_7/content?query=",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3278"
     },
     {
       "etid": 3203,
@@ -3730,7 +3685,7 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3031"
     },
     {
-      "etid": 3292,
+      "etid": 3289,
       "country_code": "SLOVENIA",
       "country": "Slovenia",
       "authority": "Slovenian Supervisory Authority (Informacijski pooblaÅ¡Äenec)",
@@ -3742,7 +3697,7 @@
       "gdpr_articles": "Art. 28 (3) GDPR",
       "violation_type": "Insufficient data processing agreement",
       "source_url": "https://www.ip-rs.si/go?u=%2Ffileadmin%2Fuser_upload%2Fzip%2FPonovna_uporaba%2F2026%2FJunij%2F0609-41-2026-7.docx",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3292"
+      "detail_url": "https://www.enforcementtracker.com/ETid-3289"
     },
     {
       "etid": 3105,
