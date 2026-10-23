@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-10-23T06:28:57Z",
+    "last_updated": "2026-10-23T12:24:06Z",
     "total_records": 3340,
     "source_url": "https://www.enforcementtracker.com/",
     "attribution": "enforcementtracker.com, provided by CMS",
@@ -9,21 +9,6 @@
     "note": "Party names are redacted (SHA-256 hash). Visit the detail_url for full information."
   },
   "fines": [
-    {
-      "etid": 3315,
-      "country_code": "FRANCE",
-      "country": "France",
-      "authority": "French Data Protection Authority (CNIL)",
-      "party_hash": "525f94a9f41c",
-      "fine_eur": 300000,
-      "date": "2026-21-07",
-      "year": null,
-      "sector": "Industry and Commerce",
-      "gdpr_articles": "Art. 12 (3) GDPR, Art. 17 (1) GDPR",
-      "violation_type": "Insufficient fulfilment of data subjects rights",
-      "source_url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000054810440",
-      "detail_url": "https://www.enforcementtracker.com/ETid-3315"
-    },
     {
       "etid": 3312,
       "country_code": "ROMANIA",
@@ -743,6 +728,21 @@
       "violation_type": "Non-compliance with general data processing principles",
       "source_url": "https://www.aepd.es/documento/ps-00280-2025.pdf",
       "detail_url": "https://www.enforcementtracker.com/ETid-3332"
+    },
+    {
+      "etid": 3315,
+      "country_code": "FRANCE",
+      "country": "France",
+      "authority": "French Data Protection Authority (CNIL)",
+      "party_hash": "525f94a9f41c",
+      "fine_eur": 300000,
+      "date": "2026-07-21",
+      "year": null,
+      "sector": "Industry and Commerce",
+      "gdpr_articles": "Art. 12 (3) GDPR, Art. 17 (1) GDPR",
+      "violation_type": "Insufficient fulfilment of data subjects rights",
+      "source_url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000054810440",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3315"
     },
     {
       "etid": 3233,
