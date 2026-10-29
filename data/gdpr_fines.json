@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-10-29T06:21:51Z",
+    "last_updated": "2026-10-29T12:19:19Z",
     "total_records": 3366,
     "source_url": "https://www.enforcementtracker.com/",
     "attribution": "enforcementtracker.com, provided by CMS",
@@ -1113,7 +1113,7 @@
       "fine_eur": 1600,
       "date": "2026-07-21",
       "year": null,
-      "sector": "Accomodation and Hospitalty",
+      "sector": "Accomodation and Hospitality",
       "gdpr_articles": "Art. 5 (1) c) GDPR, Art. 13 GDPR",
       "violation_type": "Non-compliance with general data processing principles",
       "source_url": "https://www.aepd.es/documento/ps-00280-2025.pdf",
