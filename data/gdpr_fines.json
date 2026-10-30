@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-30T06:21:29Z",
-    "total_records": 3366,
+    "last_updated": "2026-10-30T12:19:10Z",
+    "total_records": 3373,
     "source_url": "https://www.enforcementtracker.com/",
     "attribution": "enforcementtracker.com, provided by CMS",
     "license": "Creative Commons BY-NC-SA 4.0",
@@ -370,6 +370,21 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3324"
     },
     {
+      "etid": 3373,
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "authority": "Spanish Data Protection Authority (aepd)",
+      "party_hash": "9852d72ce43c",
+      "fine_eur": 2000,
+      "date": "2026-09-14",
+      "year": null,
+      "sector": "Accomodation and Hospitality",
+      "gdpr_articles": "Art. 6 (1) GDPR",
+      "violation_type": "Insufficient legal basis for data processing",
+      "source_url": "https://www.aepd.es/documento/ps-00472-2024.pdf",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3373"
+    },
+    {
       "etid": 3331,
       "country_code": "SPAIN",
       "country": "Spain",
@@ -565,6 +580,36 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3291"
     },
     {
+      "etid": 3370,
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "authority": "Spanish Data Protection Authority (aepd)",
+      "party_hash": "ff5e64c74e06",
+      "fine_eur": 2400,
+      "date": "2026-08-27",
+      "year": null,
+      "sector": "Employment",
+      "gdpr_articles": "Art. 5 (1) c) GDPR, Art. 13 GDPR",
+      "violation_type": "Non-compliance with general data processing principles",
+      "source_url": "https://www.aepd.es/documento/ps-00440-2025.pdf",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3370"
+    },
+    {
+      "etid": 3369,
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "authority": "Spanish Data Protection Authority (aepd)",
+      "party_hash": "e41e318f2e1b",
+      "fine_eur": 2000,
+      "date": "2026-08-27",
+      "year": null,
+      "sector": "Employment",
+      "gdpr_articles": "Art. 13 GDPR",
+      "violation_type": "Insufficient fulfilment of information obligations",
+      "source_url": "https://www.aepd.es/documento/ps-00437-2025.pdf",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3369"
+    },
+    {
       "etid": 3302,
       "country_code": "IRELAND",
       "country": "Ireland",
@@ -685,6 +730,21 @@
       "detail_url": "https://www.enforcementtracker.com/ETid-3308"
     },
     {
+      "etid": 3368,
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "authority": "Spanish Data Protection Authority (aepd)",
+      "party_hash": "9cdb740d2e22",
+      "fine_eur": 2400,
+      "date": "2026-08-17",
+      "year": null,
+      "sector": "Finance, Insurance and Consulting",
+      "gdpr_articles": "Art. 58 (1) GDPR",
+      "violation_type": "Insufficient cooperation with supervisory authority",
+      "source_url": "https://www.aepd.es/documento/ps-00043-2026.pdf",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3368"
+    },
+    {
       "etid": 3360,
       "country_code": "SPAIN",
       "country": "Spain",
@@ -788,6 +848,21 @@
       "violation_type": "Non-compliance with general data processing principles",
       "source_url": "https://www.dataprotection.ro/index.jsp?page=Comunicat_Presa_06.08.2026",
       "detail_url": "https://www.enforcementtracker.com/ETid-3225"
+    },
+    {
+      "etid": 3367,
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "authority": "Spanish Data Protection Authority (aepd)",
+      "party_hash": "5d7836028b1a",
+      "fine_eur": 56000,
+      "date": "2026-08-04",
+      "year": null,
+      "sector": "Media, Telecoms and Broadcasting",
+      "gdpr_articles": "Art. 6 (1) GDPR",
+      "violation_type": "Insufficient legal basis for data processing",
+      "source_url": "https://www.aepd.es/documento/ps-00410-2025.pdf",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3367"
     },
     {
       "etid": 3335,
@@ -938,6 +1013,36 @@
       "violation_type": "Insufficient technical and organisational measures to ensure information security",
       "source_url": "http://www.dpa.gr/sites/default/files/2026-09/15_2026%20anonym.pdf",
       "detail_url": "https://www.enforcementtracker.com/ETid-3298"
+    },
+    {
+      "etid": 3372,
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "authority": "Spanish Data Protection Authority (aepd)",
+      "party_hash": "6d9bcf117328",
+      "fine_eur": 600,
+      "date": "2026-07-24",
+      "year": null,
+      "sector": "Industry and Commerce",
+      "gdpr_articles": "Art. 15 GDPR",
+      "violation_type": "Insufficient fulfilment of data subjects rights",
+      "source_url": "https://www.aepd.es/documento/ps-00466-2025.pdf",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3372"
+    },
+    {
+      "etid": 3371,
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "authority": "Spanish Data Protection Authority (aepd)",
+      "party_hash": "b30f37ee5de2",
+      "fine_eur": 600,
+      "date": "2026-07-24",
+      "year": null,
+      "sector": "Not assigned",
+      "gdpr_articles": "Art. 58 (1) GDPR",
+      "violation_type": "Insufficient cooperation with supervisory authority",
+      "source_url": "https://www.aepd.es/documento/ps-00442-2025.pdf",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3371"
     },
     {
       "etid": 3365,
