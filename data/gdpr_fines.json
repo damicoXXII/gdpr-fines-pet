@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-13T06:18:26Z",
-    "total_records": 3417,
+    "last_updated": "2026-11-13T12:15:56Z",
+    "total_records": 3422,
     "source_url": "https://www.enforcementtracker.com/",
     "attribution": "enforcementtracker.com, provided by CMS",
     "license": "Creative Commons BY-NC-SA 4.0",
@@ -9,6 +9,51 @@
     "note": "Party names are redacted (SHA-256 hash). Visit the detail_url for full information."
   },
   "fines": [
+    {
+      "etid": 3420,
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "authority": "Romanian National Supervisory Authority for Personal Data Processing (ANSPDCP)",
+      "party_hash": "3c00bb8de73d",
+      "fine_eur": 10000,
+      "date": "2026-11-11",
+      "year": null,
+      "sector": "Finance, Insurance and Consulting",
+      "gdpr_articles": "Art. 32 (1) b), (2) GDPR",
+      "violation_type": "Insufficient technical and organisational measures to ensure information security",
+      "source_url": "",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3420"
+    },
+    {
+      "etid": 3422,
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "authority": "Norwegian Supervisory Authority (Datatilsynet)",
+      "party_hash": "74d7fbb64480",
+      "fine_eur": 950,
+      "date": "2026-11-10",
+      "year": null,
+      "sector": "Individuals and Private Associations",
+      "gdpr_articles": "Art. 6 (1) GDPR",
+      "violation_type": "Insufficient legal basis for data processing",
+      "source_url": "",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3422"
+    },
+    {
+      "etid": 3421,
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "authority": "Norwegian Supervisory Authority (Datatilsynet)",
+      "party_hash": "9e26b81ab432",
+      "fine_eur": 13190,
+      "date": "2026-11-10",
+      "year": null,
+      "sector": "Media, Telecoms and Broadcasting",
+      "gdpr_articles": "Art. 6 (1) GDPR, Art. 9 (1) GDPR",
+      "violation_type": "Insufficient legal basis for data processing",
+      "source_url": "",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3421"
+    },
     {
       "etid": 3415,
       "country_code": "ROMANIA",
@@ -38,6 +83,21 @@
       "violation_type": "Insufficient technical and organisational measures to ensure information security",
       "source_url": "",
       "detail_url": "https://www.enforcementtracker.com/ETid-3414"
+    },
+    {
+      "etid": 3419,
+      "country_code": "POLAND",
+      "country": "Poland",
+      "authority": "Polish National Personal Data Protection Office (UODO)",
+      "party_hash": "ceae3e512f24",
+      "fine_eur": 15390,
+      "date": "2026-11-02",
+      "year": null,
+      "sector": "Public Sector and Education",
+      "gdpr_articles": "Art. 5 (1) f) GDPR, Art. 5 (2) GDPR, Art. 25 (1) GDPR, Art. 32 (1), (2) GDPR",
+      "violation_type": "Insufficient technical and organisational measures to ensure information security",
+      "source_url": "",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3419"
     },
     {
       "etid": 3416,
@@ -143,6 +203,21 @@
       "violation_type": "Insufficient legal basis for data processing",
       "source_url": "",
       "detail_url": "https://www.enforcementtracker.com/ETid-3382"
+    },
+    {
+      "etid": 3418,
+      "country_code": "ITALY",
+      "country": "Italy",
+      "authority": "Italian Data Protection Authority (Garante)",
+      "party_hash": "8be5187640d4",
+      "fine_eur": 25500,
+      "date": "2026-10-20",
+      "year": null,
+      "sector": "Employment",
+      "gdpr_articles": "Art. 5 (1) a), c), e) GDPR, Art. 12 (3) GDPR, Art. 15 GDPR",
+      "violation_type": "Non-compliance with general data processing principles",
+      "source_url": "",
+      "detail_url": "https://www.enforcementtracker.com/ETid-3418"
     },
     {
       "etid": 3412,
